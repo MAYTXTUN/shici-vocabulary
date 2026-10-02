@@ -1,0 +1,7 @@
+{
+  "name": "shici-vocabulary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "按天复习、独立加练的单词背诵应用",
+  "scripts": { "start": "node server.cjs", "test": "node --test tests/*.test.cjs" }
+}

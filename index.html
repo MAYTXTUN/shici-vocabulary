@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#17675d">
+  <meta name="description" content="按天复习，把不熟悉的单词慢慢记牢。">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <title>拾词 · 每一天，记牢一点</title>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#today"><span class="brand-mark">拾</span><span>拾词<small>让记忆有自己的节奏</small></span></a>
+    <nav aria-label="主导航">
+      <a href="#today" data-route="today"><span>◷</span> 今日学习</a>
+      <a href="#weak" data-route="weak"><span>◇</span> 薄弱词</a>
+      <a href="#library" data-route="library"><span>▤</span> 我的词库</a>
+      <a href="#settings" data-route="settings"><span>⚙</span> 学习设置</a>
+    </nav>
+    <div class="sidebar-note"><span class="tiny-label">记忆小约定</span><p>按天推进，慢慢记牢。<br>多练几遍，也不会打乱<br>明天的复习计划。</p><span class="leaf">✳</span></div>
+    <div class="local-status"><i></i> 数据保存在此设备</div>
+  </aside>
+  <main>
+    <header class="topbar"><span id="date-label"></span><div class="top-actions"><button id="install-button" class="text-button" hidden>安装到手机</button><span class="device-tag">自己的学习空间</span></div></header>
+    <div id="app" aria-live="polite"><div class="loading">正在打开你的词库…</div></div>
+    <footer>拾词 · 让每一次复习，都有迹可循</footer>
+  </main>
+  <nav class="mobile-nav" aria-label="手机导航"><a href="#today" data-route="today">◷<span>今日</span></a><a href="#weak" data-route="weak">◇<span>薄弱词</span></a><a href="#library" data-route="library">▤<span>词库</span></a><a href="#settings" data-route="settings">⚙<span>设置</span></a></nav>
+  <div id="toast" role="status"></div>
+  <script src="./core.js"></script>
+  <script src="./learning-aids.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

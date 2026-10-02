@@ -1,0 +1,11 @@
+.android-tools/
+android/build/
+android/signing/
+tmp/
+__pycache__/
+*.pyc
+
+# Personal learning exports stay on this device.
+拾词-完整备份-*.json
+拾词-薄弱词-*.csv
+拾词-词库-*.csv
